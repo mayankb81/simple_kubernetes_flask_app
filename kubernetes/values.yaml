@@ -1,3 +1,0 @@
-image: <+artifacts.primary.image>
-replicas: 3
-namespace: default
