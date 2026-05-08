@@ -1,0 +1,16 @@
+image: <+artifacts.primary.image>
+
+service:
+  name: simple-flask-app
+  port: 80
+  targetPort: 5000
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "100m"
+  limits:
+    memory: "256Mi"
+    cpu: "200m"
+
+replicas: 2
