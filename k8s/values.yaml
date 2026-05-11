@@ -1,0 +1,16 @@
+# Default values for simple-flask-app
+replicaCount: 1
+
+image: <+artifacts.primary.image>
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "100m"
+  limits:
+    memory: "256Mi"
+    cpu: "200m"
